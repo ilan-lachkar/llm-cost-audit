@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM Cost Audit — find out where you're overpaying for API calls</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; line-height: 1.55; }
+  h1 { font-size: 1.9rem; margin-bottom: 0.3rem; }
+  .tagline { color: #666; font-size: 1.1rem; margin-top: 0; }
+  .price { font-size: 2rem; font-weight: 700; margin: 1.5rem 0 0.25rem; }
+  .price-note { color: #666; font-size: 0.9rem; margin-top: 0; }
+  .cta { display: inline-block; background: #635bff; color: #fff; text-decoration: none;
+         padding: 0.85rem 1.6rem; border-radius: 8px; font-weight: 600; margin: 1rem 0 2rem; }
+  .cta:hover { background: #4b45cc; }
+  ol { padding-left: 1.2rem; }
+  ol li { margin-bottom: 0.9rem; }
+  .box { background: #f6f6f8; border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1.5rem 0; }
+  code { background: #eee; padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.9em; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: #888; border-top: 1px solid #ddd; padding-top: 1rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111; color: #eee; }
+    .box { background: #1c1c22; }
+    code { background: #2a2a33; }
+    .tagline, .price-note, footer { color: #999; }
+    footer { border-top-color: #333; }
+  }
+</style>
+</head>
+<body>
+
+<h1>LLM Cost Audit</h1>
+<p class="tagline">Find out where you're overpaying for Anthropic / OpenAI / Google API calls — a written report with concrete savings.</p>
+
+<p class="price">$29 <span style="font-size:1rem;font-weight:400;color:#666;">one-time</span></p>
+<p class="price-note">No subscription. Pay once, get one report.</p>
+
+<a class="cta" href="https://buy.stripe.com/bJe28sd7v8oPc1m6pa9Zm02">Pay &amp; start your audit →</a>
+
+<h2>How it works</h2>
+<ol>
+  <li><strong>Pay the $29 audit fee</strong> via the Stripe link above.</li>
+  <li><strong>Send your usage export</strong> — email
+    <code>ilan.lachkar+llmcostaudit@gmail.com</code> with a CSV/JSON export of your recent API usage from your
+    provider's dashboard, or just paste a representative sample of requests (model used + rough input/output
+    size). No API keys, no live traffic access needed — just the usage data you already have. Mention the
+    email address you used to pay so we can match your order.</li>
+  <li><strong>Get your report within 48 hours</strong>: for each recurring request pattern, whether a cheaper
+    model would likely produce comparable output, plus an estimated % monthly savings if you switched.</li>
+</ol>
+
+<div class="box">
+  <strong>Who this is for:</strong> small teams/solo developers spending real money on LLM APIs who suspect
+  they're using a more expensive model than they need for some of their calls, but haven't had time to check
+  systematically.
+</div>
+
+<h2>Why trust this</h2>
+<p>Built by the same person behind
+  <a href="https://github.com/ilan-lachkar/llm-tokencheck">llm-tokencheck</a>, a free/open-source CLI
+  (<code>npm i -g llm-tokencheck</code>) that estimates LLM token cost before you send a request. This audit
+  is the same pricing knowledge applied to your actual usage patterns.</p>
+
+<h2>Early access — honest disclaimer</h2>
+<p>This is a new, manually-reviewed service (not yet automated at scale). Reports are written by hand using
+current public pricing for Anthropic, OpenAI and Google models. If for any reason we can't produce a useful
+report from what you send us, you get a full refund — just ask.</p>
+
+<footer>
+  <p><strong>Data handling:</strong> usage data you send is used only to write your report, is not shared
+  with any third party, and is deleted once your report is sent. No affiliate links on this page. Contact:
+  <code>ilan.lachkar+llmcostaudit@gmail.com</code>.</p>
+</footer>
+
+</body>
+</html>
